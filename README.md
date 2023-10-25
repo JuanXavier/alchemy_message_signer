@@ -22,5 +22,11 @@ PRIVATE_KEY=YOUR_PRIVATE_KEY
 To run the scripts, run
 
 ```
-node 'scriptName.js'
+node .\scripts\SCRIPT_NAME.js PARAMETERS
+```
+
+eg:
+
+```
+node .\scripts\checkBalance.js "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
 ```

@@ -19,7 +19,8 @@ const main = async (targetAddress) => {
 }
 
 // Process command-line arguments
+// Assuming the first argument is the target address
 const args = process.argv.slice(2)
-const targetAddress = args[0] // Assuming the first argument is the target address
+const targetAddress = args[0]
 
 main(targetAddress)
