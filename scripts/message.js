@@ -1,9 +1,10 @@
 require('dotenv').config()
 const { createAlchemyWeb3 } = require('@alch/alchemy-web3')
-const { API_URL, PRIVATE_KEY } = process.env
+const { ENDPOINT, PRIVATE_KEY } = process.env
 
 const main = () => {
-	const web3 = createAlchemyWeb3(API_URL)
+	const web3 = createAlchemyWeb3(ENDPOINT)
+
 	const message = 'GM'
 	const signMessage = web3.eth.accounts.sign(message, PRIVATE_KEY)
 	const signer = web3.eth.accounts.recover(message, signMessage.signature)
